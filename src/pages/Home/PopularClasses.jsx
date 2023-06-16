@@ -15,12 +15,12 @@ Unlock the power of communicatns with our popular language classes designed for 
                 {
                     sortedClasses?.slice(0, 6).map(classItem => <div key={classItem._id} className="rounded-lg overflow-hidden shadow-lg">
                         <img className="w-full" src={classItem.class_image} alt={classItem.language} />
-                        <div className="px-6 py-4">
-                            <div className="font-bold text-2xl mb-2">{classItem.language}</div>
-                            <p className="text-gray-700 text-base font-semibold">Instructor: {classItem.instructor_name}</p>
-                            <p className="text-gray-700 text-base font-semibold">Price: $ <span className='text-primary'>{classItem.price}</span></p>
-                            <p className="text-gray-700 text-base font-semibold">Enrolled Students: {classItem.enrolled_students}</p>
-                        </div>
+                        <ul className="px-6 py-4 ">
+                            <li className="font-bold text-2xl mb-2 list-disc">{classItem.language}</li>
+                            <li className="text-gray-700 text-base list-disc font-semibold">Instructor: {classItem.instructor_name}</li>
+                            <li className="text-gray-700 text-base list-disc font-semibold">Price: $ <span className='text-primary'>{classItem.price}</span></li>
+                            <li className="text-gray-700 text-base list-disc font-semibold">Enrolled Students: {classItem.enrolled_students}</li>
+                        </ul>
                     </div>)
                 }
             </div>

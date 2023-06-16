@@ -58,14 +58,14 @@ const ManageClasses = () => {
     return (
         <div className='container mx-auto my-12'>
         <h3 className='font-bold text-5xl text-primary text-center mb-6'>All Classes Are Here</h3>
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-14'>
             {
                 classes?.map(admClass => <div key={admClass._id} className="card bg-base-100 shadow-xl">
                     <figure><img src={admClass.class_image} alt={admClass.language} /></figure>
                     <div className="card-body ">
                         <h2 className="card-title text-2xl">
                             {admClass.class_name}
-                            <div className="badge badge-neutral badge-lg">{admClass.language}</div>
+                            <div className="badge badge-neutral badge-lg"><small>{admClass.language}</small></div>
                         </h2>
                         <p className="text-gray-700  text-base font-semibold">Instructor: {admClass.instructor_name}</p>
                         <p className="text-gray-700 text-base font-semibold">Email: {admClass.instructor_email}</p>

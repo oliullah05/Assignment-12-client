@@ -66,8 +66,8 @@ const AddAClass = () => {
                         />
                     </div>
                 </div>
-                <div className='lg:flex gap-3'>
-                    <div className="form-control lg:w-1/3">
+                <div className=''>
+                    <div className="form-control ">
                         <label className="block font-semibold mb-2">Instructor name</label>
                         <input
                             type="text"
@@ -77,7 +77,7 @@ const AddAClass = () => {
                             className="w-full border border-gray-300 rounded px-3 py-2 text-black bg-gray-100"
                         />
                     </div>
-                    <div className="form-control lg:w-1/3">
+                    <div className="form-control ">
                         <label className="block font-semibold mb-2">Instructor email</label>
                         <input
                             type="text"
@@ -87,7 +87,7 @@ const AddAClass = () => {
                             className="w-full border border-gray-300 rounded px-3 py-2 text-black bg-gray-100"
                         />
                     </div>
-                    <div className="form-control lg:w-1/3">
+                    <div className="form-control ">
                         <label className="block font-semibold mb-2">Language</label>
                         <input
                             type="text"
@@ -96,8 +96,8 @@ const AddAClass = () => {
                         />
                     </div>
                 </div>
-                <div className='lg:flex gap-3'>
-                    <div className="form-control lg:w-1/2">
+                <div className=''>
+                    <div className="form-control ">
                         <label className="block font-semibold mb-2">Available seats</label>
                         <input
                             type="number"
@@ -105,7 +105,7 @@ const AddAClass = () => {
                             className="w-full border border-gray-300 rounded px-3 py-2 text-black"
                         />
                     </div>
-                    <div className="form-control lg:w-1/2">
+                    <div className="form-control">
                         <label className="block font-semibold mb-2">Price</label>
                         <input
                             type="number"

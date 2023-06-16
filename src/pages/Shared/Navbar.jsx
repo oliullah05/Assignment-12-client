@@ -21,7 +21,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='bg-slate-900'>
+        <div className='bg-primary'>
             <div className="navbar container mx-auto px-4">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -145,10 +145,13 @@ const Navbar = () => {
                         {user ?
                             <button onClick={handleLogOut} type='button' className='btn btn-outline hidden lg:flex text-white'>
                                 Log out
-                            </button> :
-                            <Link to={"/login"}><button type='button' className='btn btn-outline hidden lg:flex text-white'>
+                            </button> :<><Link to={"/login"}><button type='button' className='btn btn-outline hidden lg:flex text-white'>
                                 Login
                             </button></Link>
+                            <Link to={"/register"}><button type='button' className='btn btn-outline hidden lg:flex text-white'>
+                                Register
+                            </button></Link></>
+                            
                         }
 
                         {

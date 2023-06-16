@@ -34,7 +34,7 @@ const Dashboard = () => {
 
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                    <div className="w-80 h-full p-4 bg-slate-900 text-base-content">
+                    <div className="w-80 h-full p-4 bg-primary text-base-content">
                         {/* Sidebar content here */}
                         {
                             user && isStudent && (
@@ -168,6 +168,7 @@ const Dashboard = () => {
                                     Log out
                                 </button>
                             </li>
+                        
                         </ul>
                     </div>
                 </div>
